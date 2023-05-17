@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cellular Automata Simulator</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="controls">
+        <button id="play-pause">Play</button>
+        <button id="next">Next Step</button>
+        <button id="clear">Clear</button>
+        <button id="randomize">Randomize</button>
+      </div>
+      <div class="resolution">
+        <label for="resolution-select">Resolution:</label>
+        <select id="resolution-select">
+          <option value="5">5</option>
+          <option value="10" selected>10</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+      <div class="rules">
+        <label for="rule-input">Enter Rule:</label>
+        <input type="text" id="rule-input" value="B3/S23">
+        <select id="rule-select">
+          <option value="conway">Conway's Game of Life</option>
+          <option value="highlife">HighLife</option>
+          <!-- Add more presets as needed -->
+        </select>
+      </div>
+      <div id="canvas">
+        <!-- The p5.js canvas will be inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+
+</html>
+

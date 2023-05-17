@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid #000;
+  padding: 20px;
+  background: #fff;
+}
+
+.controls, .resolution, .rules {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.controls button:last-child {
+  margin-right: 0;
+}
+
+.resolution label, .rules label {
+  margin-right: 10px;
+}
+
+.controls button, .resolution select, .rules select, .rules input {
+  font-size: 22px;  
+  margin-right: 10px;  
+}
+
+#canvas {
+  width: 800px;
+  height: 800px;
+}
+
