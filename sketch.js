@@ -104,9 +104,9 @@ function draw() {
       let y = i * resolution;
       if (grid[i][j] == 1) {
         fill(255);
-        stroke(0);
+        noStroke();  // This line disables the outline of the cells.
         rect(x, y, resolution - 1, resolution - 1);
-      }
+      }      
     }
   }
 
